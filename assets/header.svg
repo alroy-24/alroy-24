@@ -1,93 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" font-family="'Courier New', ui-monospace, monospace">
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#05010d"/>
-      <stop offset="1" stop-color="#1a0533"/>
-    </linearGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00f0ff"/>
-      <stop offset="0.5" stop-color="#ff2bd6"/>
-      <stop offset="1" stop-color="#b026ff"/>
-    </linearGradient>
-    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
-      <stop offset="0" stop-color="#ff2bd6" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="1.6" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="900" height="210" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
   <style><![CDATA[
-    @keyframes scan { 0%{transform:translateY(-10px)} 100%{transform:translateY(270px)} }
-    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
-    @keyframes flick { 0%,89%,100%{opacity:1} 90%{opacity:.45} 91%{opacity:1} 95%{opacity:.7} 96%{opacity:1} }
-    @keyframes gM { 0%,88%,100%{transform:translateX(-3px)} 90%{transform:translateX(-8px)} 93%{transform:translateX(-1px)} }
-    @keyframes gC { 0%,88%,100%{transform:translateX(3px)} 90%{transform:translateX(8px)} 93%{transform:translateX(1px)} }
-    @keyframes pulse { 0%,100%{opacity:.85} 50%{opacity:.35} }
-    .scan{animation:scan 4.2s linear infinite}
-    .blink{animation:blink 1.1s step-end infinite}
-    .title{animation:flick 5s infinite}
-    .gm{animation:gM 4s infinite}
-    .gc{animation:gC 4s infinite}
-    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes rise { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:translateY(0);} }
+    @keyframes draw { to { stroke-dashoffset:0; } }
+    @keyframes fade { to { opacity:1; } }
+    .name { opacity:0; animation: rise .9s ease forwards .15s; }
+    .sub  { opacity:0; animation: fade 1s ease forwards .9s; }
+    .line { stroke-dasharray:170; stroke-dashoffset:170; animation: draw 1.3s ease forwards .5s; }
+    .dot  { opacity:0; animation: fade .6s ease forwards 1.7s; }
   ]]></style>
 
-  <rect width="1000" height="260" fill="url(#sky)"/>
-  <rect width="1000" height="260" fill="url(#halo)"/>
+  <!-- self-contained card so it looks identical in light & dark mode -->
+  <rect x="1" y="1" width="898" height="208" rx="16" fill="#0f1419" stroke="#232a35"/>
 
-  <!-- synthwave grid -->
-  <g stroke="#00f0ff" stroke-opacity="0.22">
-    <line x1="500" y1="150" x2="-150" y2="260"/>
-    <line x1="500" y1="150" x2="120" y2="260"/>
-    <line x1="500" y1="150" x2="320" y2="260"/>
-    <line x1="500" y1="150" x2="500" y2="260"/>
-    <line x1="500" y1="150" x2="680" y2="260"/>
-    <line x1="500" y1="150" x2="880" y2="260"/>
-    <line x1="500" y1="150" x2="1150" y2="260"/>
-  </g>
-  <g stroke="#ff2bd6">
-    <line x1="0" y1="178" x2="1000" y2="178" stroke-opacity="0.12"/>
-    <line x1="0" y1="196" x2="1000" y2="196" stroke-opacity="0.16"/>
-    <line x1="0" y1="216" x2="1000" y2="216" stroke-opacity="0.22"/>
-    <line x1="0" y1="238" x2="1000" y2="238" stroke-opacity="0.30"/>
-    <line x1="0" y1="259" x2="1000" y2="259" stroke-opacity="0.40"/>
-  </g>
+  <text class="name" x="450" y="96" text-anchor="middle" fill="#e6edf3" font-size="46" font-weight="600" letter-spacing="1">Alroy Pereira</text>
 
-  <!-- HUD corner brackets -->
-  <g stroke="#00f0ff" stroke-width="2" fill="none" filter="url(#soft)">
-    <path d="M18,18 H64 M18,18 V52"/>
-    <path d="M982,18 H936 M982,18 V52"/>
-    <path d="M18,242 H64 M18,242 V208"/>
-    <path d="M982,242 H936 M982,242 V208"/>
-  </g>
+  <line class="line" x1="365" y1="120" x2="535" y2="120" stroke="#88c0d0" stroke-width="2" stroke-linecap="round"/>
+  <circle class="dot" cx="535" cy="120" r="3.2" fill="#88c0d0"/>
 
-  <!-- top HUD text -->
-  <text x="34" y="40" fill="#39ff14" font-size="15" letter-spacing="2" filter="url(#soft)">PLAYER_01</text>
-  <g text-anchor="end">
-    <text x="938" y="40" fill="#cbd5e1" font-size="15" letter-spacing="2">STATUS: ONLINE</text>
-    <circle class="blink" cx="956" cy="35" r="4" fill="#39ff14"/>
-  </g>
-
-  <!-- glitch title -->
-  <g class="title" text-anchor="middle" font-weight="bold" font-size="82" letter-spacing="12">
-    <text class="gm" x="500" y="132" fill="#ff2bd6" opacity="0.75" filter="url(#glow)">ALROY</text>
-    <text class="gc" x="500" y="132" fill="#00f0ff" opacity="0.75" filter="url(#glow)">ALROY</text>
-    <text x="500" y="132" fill="#f5f3ff" filter="url(#soft)">ALROY</text>
-  </g>
-
-  <!-- subtitle -->
-  <text x="500" y="170" text-anchor="middle" fill="#00f0ff" font-size="16" letter-spacing="5" filter="url(#soft)">
-    DATA SCIENCE &#183; MACHINE LEARNING &#183; NLP &#183; DEEP LEARNING
-  </text>
-
-  <!-- press start -->
-  <text class="blink" x="500" y="206" text-anchor="middle" fill="#ffe600" font-size="15" letter-spacing="4" filter="url(#soft)">&#9654; PRESS START</text>
-
-  <!-- moving scanline -->
-  <rect class="scan" x="0" y="0" width="1000" height="3" fill="#00f0ff" opacity="0.10"/>
+  <text class="sub" x="450" y="156" text-anchor="middle" fill="#8b98a9" font-size="16" letter-spacing="3">DATA SCIENTIST &#183; MACHINE LEARNING &#183; NLP &#183; DEEP LEARNING</text>
 </svg>
