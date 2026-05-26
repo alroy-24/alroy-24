@@ -1,47 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" width="760" height="296" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
   <style><![CDATA[
     @keyframes grow { to { transform: scaleX(1); } }
-    .bar { transform: scaleX(0); transform-origin: left; animation: grow 1.1s ease forwards; }
+    .bar { transform: scaleX(0); transform-origin: left; animation: grow 1.1s cubic-bezier(.2,.8,.2,1) forwards; }
     .b1{animation-delay:.15s}.b2{animation-delay:.25s}.b3{animation-delay:.35s}
     .b4{animation-delay:.45s}.b5{animation-delay:.55s}.b6{animation-delay:.65s}
   ]]></style>
 
-  <rect x="1" y="1" width="758" height="294" rx="16" fill="#0f1419" stroke="#232a35"/>
+  <rect x="1" y="1" width="758" height="294" rx="16" fill="#0b1020" stroke="#232a4a"/>
 
-  <!-- rows: label · track · fill · value -->
   <!-- Data Analysis 90 -> 387 -->
-  <text x="34" y="50" fill="#c4ccd6" font-size="15">Data Analysis</text>
-  <rect x="250" y="40" width="430" height="6" rx="3" fill="#1c232e"/>
-  <rect class="bar b1" x="250" y="40" width="387" height="6" rx="3" fill="#88c0d0"/>
-  <text x="726" y="50" text-anchor="end" fill="#8b98a9" font-size="13">90</text>
+  <text x="34" y="50" fill="#c7d0e8" font-size="15">Data Analysis</text>
+  <rect x="250" y="40" width="430" height="7" rx="3.5" fill="#1b2140"/>
+  <rect class="bar b1" x="250" y="40" width="387" height="7" rx="3.5" fill="#818cf8"/>
+  <text x="726" y="50" text-anchor="end" fill="#aab4d4" font-size="13">90</text>
 
   <!-- Machine Learning 88 -> 378 -->
-  <text x="34" y="92" fill="#c4ccd6" font-size="15">Machine Learning</text>
-  <rect x="250" y="82" width="430" height="6" rx="3" fill="#1c232e"/>
-  <rect class="bar b2" x="250" y="82" width="378" height="6" rx="3" fill="#88c0d0"/>
-  <text x="726" y="92" text-anchor="end" fill="#8b98a9" font-size="13">88</text>
+  <text x="34" y="92" fill="#c7d0e8" font-size="15">Machine Learning</text>
+  <rect x="250" y="82" width="430" height="7" rx="3.5" fill="#1b2140"/>
+  <rect class="bar b2" x="250" y="82" width="378" height="7" rx="3.5" fill="#a78bfa"/>
+  <text x="726" y="92" text-anchor="end" fill="#aab4d4" font-size="13">88</text>
 
   <!-- NLP 85 -> 366 -->
-  <text x="34" y="134" fill="#c4ccd6" font-size="15">NLP</text>
-  <rect x="250" y="124" width="430" height="6" rx="3" fill="#1c232e"/>
-  <rect class="bar b3" x="250" y="124" width="366" height="6" rx="3" fill="#88c0d0"/>
-  <text x="726" y="134" text-anchor="end" fill="#8b98a9" font-size="13">85</text>
+  <text x="34" y="134" fill="#c7d0e8" font-size="15">NLP</text>
+  <rect x="250" y="124" width="430" height="7" rx="3.5" fill="#1b2140"/>
+  <rect class="bar b3" x="250" y="124" width="366" height="7" rx="3.5" fill="#c084fc"/>
+  <text x="726" y="134" text-anchor="end" fill="#aab4d4" font-size="13">85</text>
 
   <!-- Deep Learning 84 -> 361 -->
-  <text x="34" y="176" fill="#c4ccd6" font-size="15">Deep Learning</text>
-  <rect x="250" y="166" width="430" height="6" rx="3" fill="#1c232e"/>
-  <rect class="bar b4" x="250" y="166" width="361" height="6" rx="3" fill="#88c0d0"/>
-  <text x="726" y="176" text-anchor="end" fill="#8b98a9" font-size="13">84</text>
+  <text x="34" y="176" fill="#c7d0e8" font-size="15">Deep Learning</text>
+  <rect x="250" y="166" width="430" height="7" rx="3.5" fill="#1b2140"/>
+  <rect class="bar b4" x="250" y="166" width="361" height="7" rx="3.5" fill="#e879f9"/>
+  <text x="726" y="176" text-anchor="end" fill="#aab4d4" font-size="13">84</text>
 
   <!-- Python 92 -> 396 -->
-  <text x="34" y="218" fill="#c4ccd6" font-size="15">Python</text>
-  <rect x="250" y="208" width="430" height="6" rx="3" fill="#1c232e"/>
-  <rect class="bar b5" x="250" y="208" width="396" height="6" rx="3" fill="#88c0d0"/>
-  <text x="726" y="218" text-anchor="end" fill="#8b98a9" font-size="13">92</text>
+  <text x="34" y="218" fill="#c7d0e8" font-size="15">Python</text>
+  <rect x="250" y="208" width="430" height="7" rx="3.5" fill="#1b2140"/>
+  <rect class="bar b5" x="250" y="208" width="396" height="7" rx="3.5" fill="#f472b6"/>
+  <text x="726" y="218" text-anchor="end" fill="#aab4d4" font-size="13">92</text>
 
   <!-- Data Visualization 86 -> 370 -->
-  <text x="34" y="260" fill="#c4ccd6" font-size="15">Data Visualization</text>
-  <rect x="250" y="250" width="430" height="6" rx="3" fill="#1c232e"/>
-  <rect class="bar b6" x="250" y="250" width="370" height="6" rx="3" fill="#88c0d0"/>
-  <text x="726" y="260" text-anchor="end" fill="#8b98a9" font-size="13">86</text>
+  <text x="34" y="260" fill="#c7d0e8" font-size="15">Data Visualization</text>
+  <rect x="250" y="250" width="430" height="7" rx="3.5" fill="#1b2140"/>
+  <rect class="bar b6" x="250" y="250" width="370" height="7" rx="3.5" fill="#fb7185"/>
+  <text x="726" y="260" text-anchor="end" fill="#aab4d4" font-size="13">86</text>
 </svg>

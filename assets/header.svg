@@ -1,21 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" width="900" height="210" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="0.5" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="g1"><stop offset="0" stop-color="#6366f1" stop-opacity="0.55"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2"><stop offset="0" stop-color="#ec4899" stop-opacity="0.50"/><stop offset="1" stop-color="#ec4899" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g3"><stop offset="0" stop-color="#a855f7" stop-opacity="0.50"/><stop offset="1" stop-color="#a855f7" stop-opacity="0"/></radialGradient>
+    <clipPath id="card"><rect x="1" y="1" width="998" height="278" rx="18"/></clipPath>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
   <style><![CDATA[
-    @keyframes rise { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:translateY(0);} }
-    @keyframes draw { to { stroke-dashoffset:0; } }
-    @keyframes fade { to { opacity:1; } }
-    .name { opacity:0; animation: rise .9s ease forwards .15s; }
-    .sub  { opacity:0; animation: fade 1s ease forwards .9s; }
-    .line { stroke-dasharray:170; stroke-dashoffset:170; animation: draw 1.3s ease forwards .5s; }
-    .dot  { opacity:0; animation: fade .6s ease forwards 1.7s; }
+    @keyframes f1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(55px,28px)} }
+    @keyframes f2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-65px,22px)} }
+    @keyframes f3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(45px,-32px)} }
+    @keyframes rise { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes draw { to{stroke-dashoffset:0} }
+    .f1{animation:f1 18s ease-in-out infinite}
+    .f2{animation:f2 23s ease-in-out infinite}
+    .f3{animation:f3 20s ease-in-out infinite}
+    .intro{opacity:0;animation:rise 1s ease forwards .2s}
+    .uline{stroke-dasharray:150;stroke-dashoffset:150;animation:draw 1.2s ease forwards .8s}
   ]]></style>
 
-  <!-- self-contained card so it looks identical in light & dark mode -->
-  <rect x="1" y="1" width="898" height="208" rx="16" fill="#0f1419" stroke="#232a35"/>
+  <g clip-path="url(#card)">
+    <rect x="0" y="0" width="1000" height="280" fill="#0b1020"/>
+    <g filter="url(#blur)">
+      <circle class="f1" cx="170" cy="70" r="150" fill="url(#g1)"/>
+      <circle class="f2" cx="850" cy="55" r="175" fill="url(#g2)"/>
+      <circle class="f3" cx="680" cy="275" r="160" fill="url(#g3)"/>
+    </g>
+  </g>
+  <rect x="1" y="1" width="998" height="278" rx="18" fill="none" stroke="#232a4a"/>
 
-  <text class="name" x="450" y="96" text-anchor="middle" fill="#e6edf3" font-size="46" font-weight="600" letter-spacing="1">Alroy Pereira</text>
-
-  <line class="line" x1="365" y1="120" x2="535" y2="120" stroke="#88c0d0" stroke-width="2" stroke-linecap="round"/>
-  <circle class="dot" cx="535" cy="120" r="3.2" fill="#88c0d0"/>
-
-  <text class="sub" x="450" y="156" text-anchor="middle" fill="#8b98a9" font-size="16" letter-spacing="3">DATA SCIENTIST &#183; MACHINE LEARNING &#183; NLP &#183; DEEP LEARNING</text>
+  <g class="intro" text-anchor="middle">
+    <text x="500" y="122" font-size="52" font-weight="700"><tspan fill="#e8ecf8">Hi, I'm </tspan><tspan fill="url(#brand)">Alroy</tspan></text>
+    <line class="uline" x1="425" y1="140" x2="575" y2="140" stroke="url(#brand)" stroke-width="3" stroke-linecap="round"/>
+    <text x="500" y="180" font-size="18" letter-spacing="2" fill="#aab4d4">DATA SCIENTIST &#183; MACHINE LEARNING &#183; NLP &#183; DEEP LEARNING</text>
+    <text x="500" y="214" font-size="16" fill="#828cad" font-style="italic">I turn messy data into clear, useful answers.</text>
+  </g>
 </svg>
