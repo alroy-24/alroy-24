@@ -45,52 +45,48 @@ data nobody wants to touch, hunting down the signal, and shipping a model or das
 
 ## 🚀 Featured projects
 
-<!-- repo= must match the exact repo name. Cards pull live stars/forks/description. -->
+<!-- Custom SVG cards (served from this repo) — no external service, won't break. -->
 <table>
   <tr>
     <td width="50%">
       <a href="https://github.com/alroy-24/Mangrove_Monitoring">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=alroy-24&repo=Mangrove_Monitoring&title_color=c084fc&text_color=aab4d4&icon_color=f472b6&bg_color=0b1020&border_color=232a4a" />
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-mangrove.svg" alt="Mangrove Monitoring" />
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/alroy-24/Review-Radar">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=alroy-24&repo=Review-Radar&title_color=c084fc&text_color=aab4d4&icon_color=f472b6&bg_color=0b1020&border_color=232a4a" />
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-review.svg" alt="Review Radar" />
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <a href="https://github.com/alroy-24/Enterprise_risk_prediction_Dashboard">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=alroy-24&repo=Enterprise_risk_prediction_Dashboard&title_color=c084fc&text_color=aab4d4&icon_color=f472b6&bg_color=0b1020&border_color=232a4a" />
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-erip.svg" alt="Enterprise Risk Prediction" />
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/alroy-24/Intelligent-Support-Ticket-Routing-System">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=alroy-24&repo=Intelligent-Support-Ticket-Routing-System&title_color=c084fc&text_color=aab4d4&icon_color=f472b6&bg_color=0b1020&border_color=232a4a" />
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-ticket.svg" alt="Intelligent Ticket Routing" />
       </a>
     </td>
   </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/alroy-24/flood-risk-prediction-dashboard">
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-flood.svg" alt="Flood Risk Prediction" />
+      </a>
+    </td>
+    <td width="50%"></td>
+  </tr>
 </table>
-
-<p>
-  <a href="https://github.com/alroy-24/flood-risk-prediction-dashboard">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alroy-24&repo=flood-risk-prediction-dashboard&title_color=c084fc&text_color=aab4d4&icon_color=f472b6&bg_color=0b1020&border_color=232a4a" />
-  </a>
-  &nbsp;<sub><i>🛠️ in progress</i></sub>
-</p>
 
 <sub><a href="https://github.com/alroy-24?tab=repositories">→ see all repositories</a></sub>
 
 ## 📈 GitHub stats
 
 <p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=alroy-24&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&title_color=c084fc&text_color=c7d0e8&icon_color=f472b6&bg_color=0b1020" alt="stats" />
-  <img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=alroy-24&hide_border=true&background=0b1020&stroke=232a4a&ring=c084fc&fire=f472b6&currStreakNum=c7d0e8&currStreakLabel=c084fc&sideNums=aab4d4&sideLabels=aab4d4&dates=828cad" alt="streak" />
-</p>
-
-<p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alroy-24&layout=compact&hide_border=true&langs_count=8&title_color=c084fc&text_color=aab4d4&bg_color=0b1020" alt="top languages" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=alroy-24&hide_border=true&background=0b1020&stroke=232a4a&ring=c084fc&fire=f472b6&currStreakNum=c7d0e8&currStreakLabel=c084fc&sideNums=aab4d4&sideLabels=aab4d4&dates=828cad" alt="streak" />
 </p>
 
 ## 🟪 Contribution activity
