@@ -86,7 +86,7 @@ data nobody wants to touch, hunting down the signal, and shipping a model or das
 ## 📈 GitHub stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=alroy-24&hide_border=true&background=0b1020&stroke=232a4a&ring=c084fc&fire=f472b6&currStreakNum=c7d0e8&currStreakLabel=c084fc&sideNums=aab4d4&sideLabels=aab4d4&dates=828cad" alt="streak" />
+  <img height="180em" src="https://streak-stats.demolab.com/?user=alroy-24&hide_border=true&background=0b1020&stroke=232a4a&ring=c084fc&fire=f472b6&currStreakNum=c7d0e8&currStreakLabel=c084fc&sideNums=aab4d4&sideLabels=aab4d4&dates=828cad" alt="streak" />
 </p>
 
 ## 🟪 Contribution activity
