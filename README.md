@@ -27,6 +27,12 @@ data nobody wants to touch, hunting down the signal, and shipping a model or das
 - 🎯 I care about work that's *useful*, not just accurate
 - 💬 Ask me about data, models, or a good visualization
 
+## ⚡ Recently
+
+<!-- Auto-updated by .github/workflows/activity.yml — do not edit between the markers. -->
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 ## 🧰 Tech & tools
 
 <p align="center">
