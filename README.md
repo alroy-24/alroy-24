@@ -83,6 +83,18 @@ data nobody wants to touch, hunting down the signal, and shipping a model or das
         <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-flood.svg" alt="Flood Risk Prediction" />
       </a>
     </td>
+    <td width="50%">
+      <a href="https://github.com/alroy-24/esports-match-predictor">
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-esports.svg" alt="Esports Match Predictor" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/alroy-24/Frag_Forecast">
+        <img width="100%" src="https://raw.githubusercontent.com/alroy-24/alroy-24/main/assets/proj-frag.svg" alt="Frag Forecast" />
+      </a>
+    </td>
     <td width="50%"></td>
   </tr>
 </table>
